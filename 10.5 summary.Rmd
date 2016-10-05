@@ -22,7 +22,7 @@ abstract: The objective of this document's template is summarize the content of 
 ---
 ---
 
-Tidyr and Diplyr Article Summary
+##Tidyr and Diplyr Article Summary
 
 This article begins by discussing the four fundamental processes necessary to comprehend 
 data. These steps are listed as Data Manipulation, Data Visualization, Statistical 
@@ -52,7 +52,7 @@ database,
 combines the values and fields from two different datasets. Lastly, mutate adjust the scope
 of the list of variables used within a function.
 
-Tidyr Summary
+##Tidyr Summary
 
 	This article begins by introducing the reader to the concept of the “tinyverse”. The 
 	tidyverse is a concept achieved through the tidyr package. It is used to create tidy 
@@ -71,7 +71,7 @@ Tidyr Summary
 	describing situations in which non-tidy data can exist legitimately, the article helps 
 	the	reader to understand cases where the tidyr functions may not be feasible. 
 
-Dplyr Article Summary
+##Dplyr Article Summary
 
 	This article’s purpose is to introduce the most useful features in the latest updates to 
 	dplyr package. It describes the package using the nycflights13 package. With this 
@@ -95,7 +95,7 @@ Dplyr Article Summary
 	adjust the material available for viewing.
 
 
-Dplyr with NYC Flights Article Summary 
+##Dplyr with NYC Flights Article Summary 
 
 	The slides comprising this presentation serve to show examples of how to interact with a 
 	dataset. Using the nycflights13 dataset, we are able to download the data and practice 

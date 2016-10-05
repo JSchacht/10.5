@@ -135,11 +135,22 @@ The objective of this document’s template is summarize the content of the four
 
 </div>
 
+<div id="TOC">
+<ul>
+<li><a href="#tidyr-and-diplyr-article-summary">Tidyr and Diplyr Article Summary</a></li>
+<li><a href="#tidyr-summary">Tidyr Summary</a></li>
+<li><a href="#dplyr-article-summary">Dplyr Article Summary</a></li>
+<li><a href="#dplyr-with-nyc-flights-article-summary">Dplyr with NYC Flights Article Summary</a></li>
+</ul>
+</div>
 
 <hr />
-<p>Tidyr and Diplyr Article Summary</p>
+<div id="tidyr-and-diplyr-article-summary" class="section level2">
+<h2>Tidyr and Diplyr Article Summary</h2>
 <p>This article begins by discussing the four fundamental processes necessary to comprehend data. These steps are listed as Data Manipulation, Data Visualization, Statistical Analysis, and Deployment of Results. The focus of this article is the first process: Data Manipulation. Contrary to the complicated and unintuitive packages that have been developed for the RStudio environment recently, the dplyr and tidyr packages are more efficient and easier to work with. For example, the pipe operator, the syntax for which is “%&gt;%”, easily forwards a value into the next function. While not as relatively valuable for simple functions, the pipe operator can significantly improve code simplicity. The article then describes four operations within the tidyr package including gather, spread, separate, unite. The gather function “reshapes” values from an unstacked form into key-value pairs. The example provided uses quarters to better identify values in certain periods of various years. The next operation described is the separate function, which splits a single variable into two in situations where there are variables about which you don’t care. Then it describes the unite function as a complement to separate, in that it merges two variables into one (the opposite of separate). Lastly, the spread function counters the gather operation by reshaping long format to wide format. The article proceeds by describing operations with the dplyr package, including select, filter, group_by, summarise, arrange, join, and mutate. Select reduces the scope of the dataframe to include only relevant variables. Filter allows a user to reduce the number of rows presented based on a number of defined conditions. Group_by organizes data by a categorical variable presented by the user. Summarise allows the user to get a more in depth, yet clear, view of the components of a variable. Arrange, similar to Group_by, allows for the organization of data, but based on numerical ordering. Join, just as in a database, combines the values and fields from two different datasets. Lastly, mutate adjust the scope of the list of variables used within a function.</p>
-<p>Tidyr Summary</p>
+</div>
+<div id="tidyr-summary" class="section level2">
+<h2>Tidyr Summary</h2>
 <pre><code>This article begins by introducing the reader to the concept of the “tinyverse”. The 
 tidyverse is a concept achieved through the tidyr package. It is used to create tidy 
 data,
@@ -156,7 +167,9 @@ to utilize these tools, refer to the article 1 summary.
 The chapter finishes with a case study for practice of the principles presented. By 
 describing situations in which non-tidy data can exist legitimately, the article helps 
 the reader to understand cases where the tidyr functions may not be feasible. </code></pre>
-<p>Dplyr Article Summary</p>
+</div>
+<div id="dplyr-article-summary" class="section level2">
+<h2>Dplyr Article Summary</h2>
 <pre><code>This article’s purpose is to introduce the most useful features in the latest updates to 
 dplyr package. It describes the package using the nycflights13 package. With this 
 package,
@@ -177,7 +190,9 @@ Similar to SQL syntax, dplyr allows for the merging of tables with the left_join
 right_join, inner_join, full_join, semi_join, and anti_join. These functions allow for 
 the elimination of redundant data from a view. Lastly, the print and view functions 
 adjust the material available for viewing.</code></pre>
-<p>Dplyr with NYC Flights Article Summary</p>
+</div>
+<div id="dplyr-with-nyc-flights-article-summary" class="section level2">
+<h2>Dplyr with NYC Flights Article Summary</h2>
 <pre><code>The slides comprising this presentation serve to show examples of how to interact with a 
 dataset. Using the nycflights13 dataset, we are able to download the data and practice 
 the skills presented in the slides. They teach us about filtering and selecting data, as 
@@ -188,6 +203,7 @@ functions. By applying the functions to multiple columns at once, as we see with
 flights dataset).
 Window Functions take n inputs and return n values, like the mean function or any other 
 aggregation function. The slides conclude by suggesting some other exercises to try.</code></pre>
+</div>
 
 
 

@@ -1,0 +1,114 @@
+---
+title: "October 5, 2016 Article Summaries"
+author: "Josh Schacht"
+date: "10/5/2016"
+output:
+  html_document:
+    toc: yes
+  pdf_document:
+    fig_caption: yes
+    fig_crop: yes
+    fig_height: 6
+    fig_width: 7
+    highlight: tango
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+  word_document: default
+abstract: The objective of this document's template is summarize the content of the
+  four articles assigned for today. These summaries will assist me in my future usage
+  of the funtions described.  
+  
+---
+---
+
+Tidyr and Diplyr Article Summary
+
+This article begins by discussing the four fundamental processes necessary to comprehend 
+data. These steps are listed as Data Manipulation, Data Visualization, Statistical 
+Analysis, and Deployment of Results. The focus of this article is the first process: Data 
+Manipulation. Contrary to the complicated and unintuitive packages that have been developed
+for the RStudio environment recently, the dplyr and tidyr packages are more efficient and 
+easier to work with. For example, the pipe operator, the syntax for which is “%>%”, easily 
+forwards a value into the next function. While not as relatively valuable for simple 
+functions, the pipe operator can significantly improve code simplicity.
+The article then describes four operations within the tidyr package including gather, 
+spread, separate, unite. The gather function “reshapes” values from an unstacked form into 
+key-value pairs. The example provided uses quarters to better identify values in certain 
+periods of various years.
+The next operation described is the separate function, which splits a single variable into 
+two in situations where there are variables about which you don’t care. Then it describes 
+the unite function as a complement to separate, in that it merges two variables into one 
+(the opposite of separate). Lastly, the spread function counters the gather operation by 
+reshaping long format to wide format. 
+The article proceeds by describing operations with the dplyr package, including select, 
+filter, group_by, summarise, arrange, join, and mutate. Select reduces the scope of the 
+dataframe to include only relevant variables. Filter allows a user to reduce the number of 
+rows presented based on a number of defined conditions. Group_by organizes data by a 
+categorical variable presented by the user. Summarise allows the user to get a more in 
+depth, yet clear, view of the components of a variable. Arrange, similar to Group_by, 
+allows for the organization of data, but based on numerical ordering. Join, just as in a 
+database,
+combines the values and fields from two different datasets. Lastly, mutate adjust the scope
+of the list of variables used within a function.
+
+Tidyr Summary
+
+	This article begins by introducing the reader to the concept of the “tinyverse”. The 
+	tidyverse is a concept achieved through the tidyr package. It is used to create tidy 
+	data,
+	which is inherently more easy and efficient to use. There are 3 rules through which one 
+	can identify a tidy dataset: each variable must have its own column, each observation 
+	must have its own row, and each value must have its own cell.
+	The two main advantages to tidy data are that a consistent data structure is easier to 
+	learn and manipulate, and that there is value in placing variables in columns. Because 
+	most datasets aren’t naturally put in a tidy form for various reasons, it is important to
+	be able to adjust data to be in an efficient form. 
+	The article then provides examples of gathering, spreading, separating, and uniting data,
+	and the situations in which these functions will be valuable. For more information on how
+	to utilize these tools, refer to the article 1 summary. 
+	The chapter finishes with a case study for practice of the principles presented. By 
+	describing situations in which non-tidy data can exist legitimately, the article helps 
+	the	reader to understand cases where the tidyr functions may not be feasible. 
+
+Dplyr Article Summary
+
+	This article’s purpose is to introduce the most useful features in the latest updates to 
+	dplyr package. It describes the package using the nycflights13 package. With this 
+	package,
+	the article describes functionalities like the minus sign, select, the %<% operator, 
+	rename, and others. For the purpose of adding new variables, the tools of mutate, 
+	transmute, and add_rownames are valuable new additions to the dplyr package. Through 
+	examples within the 
+	nyflights13 package, the potential uses of these become clear. For future in depth 
+	analysis 
+	of these tools, view these examples.
+	The article continues by addressing Grouping and Counting tools including summarise, 
+	tally, count, group_size, n_groups, and ungroup. These functions are based on the 
+	principles of effective viewing of information. Data_frame, however, another function, is
+	a new way to create data frames that allows for the computation of new columns with 
+	previously defined columns without coercing column types, munging or adding column names,
+	and other benefits.
+	Similar to SQL syntax, dplyr allows for the merging of tables with the left_join, 
+	right_join, inner_join, full_join, semi_join, and anti_join. These functions allow for 
+	the elimination of redundant data from a view. Lastly, the print and view functions 
+	adjust the material available for viewing.
+
+
+Dplyr with NYC Flights Article Summary 
+
+	The slides comprising this presentation serve to show examples of how to interact with a 
+	dataset. Using the nycflights13 dataset, we are able to download the data and practice 
+	the skills presented in the slides. They teach us about filtering and selecting data, as 
+	well as introduce us to the idea of chaining, which increases readability.
+	The slides continue by providing examples of input and output for the arrange and mutate 
+	functions. By applying the functions to multiple columns at once, as we see with 
+	‘summarise’, we better understand how to work with larger amounts of data (like this 
+	flights dataset).
+	Window Functions take n inputs and return n values, like the mean function or any other 
+	aggregation function. The slides conclude by suggesting some other exercises to try.
+
+
+
+
+
